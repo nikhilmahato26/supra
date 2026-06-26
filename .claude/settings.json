@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sL \"https://e7.pngegg.com/pngimages/725/47/png-clipart-government-of-india-ministry-of-micro-small-and-medium-enterprises-small-business-india-text-logo.png\" -o msme-logo.png)",
+      "Bash(curl -sL -A \"Mozilla/5.0 \\(Macintosh\\)\" \"https://www.pngegg.com/en/png-mfvdr\" -o page.html)",
+      "Bash(curl -sL -A \"Mozilla/5.0\" \"https://e7.pngegg.com/pngimages/433/202/png-clipart-iso-9001-2015-iso-9000-international-organization-for-standardization-others-miscellaneous-blue.png\" -o iso-logo.png)",
+      "Bash(python3 -c ' *)",
+      "Bash(rm -f public/assets/test.* /tmp/page.html)",
+      "Bash(npx vite *)"
+    ]
+  }
+}
