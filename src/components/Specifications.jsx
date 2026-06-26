@@ -14,6 +14,28 @@ export default function Specifications() {
           subtitle="Standard SUPRA mild steel electrode sizes, packing and recommended current ranges."
         />
 
+        {/* Welding imagery */}
+        <Reveal delay={0.05}>
+          <div className="mt-12 grid gap-6 sm:grid-cols-2">
+            {[
+              { src: '/assets/welding-1.png', alt: 'SUPRA electrode in a live welding application' },
+              { src: '/assets/welding-2.png', alt: 'Close-up of a weld bead laid with SUPRA electrodes' },
+            ].map((img) => (
+              <div
+                key={img.src}
+                className="overflow-hidden rounded-3xl border border-brand/10 shadow-card"
+              >
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  loading="lazy"
+                  className="h-64 w-full object-cover transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+            ))}
+          </div>
+        </Reveal>
+
         {/* Desktop / tablet table */}
         <Reveal delay={0.1}>
           <div className="mt-12 hidden overflow-hidden rounded-3xl border border-brand/10 shadow-card md:block">
