@@ -4,7 +4,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import WhyChoose from './components/WhyChoose'
 import ProductRange from './components/ProductRange'
-import ElectrodeTypes from './components/ElectrodeTypes'
+// import ElectrodeTypes from './components/ElectrodeTypes'
 import Specifications from './components/Specifications'
 import Applications from './components/Applications'
 import Quality from './components/Quality'
@@ -28,7 +28,7 @@ export default function App() {
         <About />
         <WhyChoose />
         <ProductRange />
-        <ElectrodeTypes />
+        {/* <ElectrodeTypes /> */}
         <Specifications />
         <Applications />
         <Quality />

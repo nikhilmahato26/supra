@@ -46,7 +46,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.18 }}
             className="mt-6 max-w-md text-base leading-relaxed text-ink/70"
           >
-            Premium mild steel welding electrodes, manufactured under strict quality
+            Premium  welding electrodes, manufactured under strict quality
             control and rigorous mechanical testing — for professionals who value
             strength, stability and long-term reliability in every weld.
           </motion.p>
@@ -126,15 +126,6 @@ export default function Hero() {
               <p className="font-display text-2xl leading-none text-brand">E6013</p>
               <p className="text-[11px] text-ink/55">General Purpose</p>
             </motion.div> */}
-            <motion.div
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.05 }}
-              className="absolute -right-2 top-6 z-20 rounded-2xl border border-yellow/40 bg-yellow px-4 py-3 shadow-card"
-            >
-              <p className="font-display text-2xl leading-none text-brand-dark">AC / DC</p>
-              <p className="text-[11px] text-brand-dark/70">All-Position</p>
-            </motion.div>
           </div>
         </div>
       </div>

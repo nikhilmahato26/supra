@@ -16,23 +16,13 @@ export default function Specifications() {
 
         {/* Welding imagery */}
         <Reveal delay={0.05}>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2">
-            {[
-              { src: '/assets/welding-1.png', alt: 'SUPRA electrode in a live welding application' },
-              { src: '/assets/welding-2.png', alt: 'Close-up of a weld bead laid with SUPRA electrodes' },
-            ].map((img) => (
-              <div
-                key={img.src}
-                className="overflow-hidden rounded-3xl border border-brand/10 shadow-card"
-              >
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  loading="lazy"
-                  className="h-64 w-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-              </div>
-            ))}
+          <div className="mt-12 overflow-hidden rounded-3xl border border-brand/10 shadow-card">
+            <img
+              src="/assets/electrodes-e6013.jpg"
+              alt="SUPRA E6013 mild steel welding electrodes"
+              loading="lazy"
+              className="h-72 w-full object-cover transition-transform duration-500 hover:scale-105 md:h-96"
+            />
           </div>
         </Reveal>
 

@@ -51,25 +51,25 @@ export const WHY_SUPRA = [
 
 export const PRODUCTS = [
   {
-    code: 'E6013',
+    code: 'E6013 / 6013S / 6013SS',
     name: 'General Purpose',
     tagline: 'Smooth arc, easy strike',
     desc: 'A versatile all-position electrode delivering a stable arc and fine, easy-to-clean welds for everyday fabrication.',
     apps: ['Sheet Metal', 'Fabrication', 'General Repair'],
   },
   {
-    code: 'E6010 / E6011',
-    name: 'Fast-Freeze',
-    tagline: 'Deep, aggressive penetration',
-    desc: 'Aggressive electrodes that dig through rust, paint and dirt — excellent for repair and pipe work.',
-    apps: ['Pipelines', 'Repair Work', 'Dirty Steel'],
-  },
-  {
     code: 'E7018',
     name: 'Low-Hydrogen',
     tagline: 'The structural gold standard',
     desc: 'Produces very strong, crack-resistant welds for critical structural integrity. Keep dry in a rod oven.',
-    apps: ['Structural Steel', 'Bridges', 'Heavy Engineering'],
+    apps: ['Structural Steel', 'Storage Tanks', 'Boilers', 'Bridges'],
+  },
+  {
+    code: 'E308L / 309L / E312 / E316L',
+    name: 'Stainless Steel',
+    tagline: 'Corrosion-resistant alloys',
+    desc: 'Stainless steel electrodes for joining and surfacing stainless and dissimilar steels with excellent corrosion resistance.',
+    apps: ['Stainless Fabrication', 'Food & Dairy', 'Chemical Plants'],
   },
 ]
 
@@ -95,9 +95,10 @@ export const ELECTRODE_TYPES = [
 ]
 
 export const SPECS = [
-  { swg: '12', size: '2.50 × 350', count: '125', current: '80–120 Amps', type: 'AC / DC (-)' },
-  { swg: '10', size: '3.15 × 350 / 450', count: '90', current: '90–140 Amps', type: 'AC / DC (-)' },
-  { swg: '08', size: '4.00 × 350 / 450', count: '60', current: '140–190 Amps', type: 'AC / DC (-)' },
+  { swg: '12', size: '2.50 × 350', count: '125', current: '80–120 Amps', type: 'AC / DC (±)' },
+  { swg: '10', size: '3.15 × 350 / 450', count: '90', current: '90–140 Amps', type: 'AC / DC (±)' },
+  { swg: '08', size: '4.00 × 350 / 450', count: '60', current: '140–190 Amps', type: 'AC / DC (±)' },
+  { swg: '06', size: '5.00 × 450', count: '40', current: '170–230 Amps', type: 'AC / DC (±)' },
 ]
 
 export const APPLICATIONS = [
