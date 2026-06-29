@@ -28,7 +28,7 @@ export default function Footer() {
             <img
               src="/assets/logo.png"
               alt="SUPRA"
-              className="h-12 w-auto rounded-md brightness-0 invert"
+              className="h-12 w-auto brightness-0 invert"
             />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/60">
               Premium mild steel welding electrodes manufactured by SUPRA ElectroWeld India.

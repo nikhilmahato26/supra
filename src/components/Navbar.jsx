@@ -22,7 +22,7 @@ export default function Navbar() {
     >
       <nav className="container-x flex items-center justify-between py-4">
         <a href="#home" className="flex items-center gap-3">
-          <img src="/assets/logo.png" alt="SUPRA" className="h-9 w-auto rounded-md md:h-10" />
+          <img src="/assets/logo.png" alt="SUPRA" className="h-9 w-auto  md:h-10" />
         </a>
 
         <div className="hidden items-center gap-8 lg:flex">
