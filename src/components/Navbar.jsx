@@ -14,6 +14,15 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  const handleNavClick = (e, href) => {
+    e.preventDefault()
+    setOpen(false)
+    const el = document.querySelector(href)
+    if (!el) return
+    const top = el.getBoundingClientRect().top + window.scrollY - 72
+    window.scrollTo({ top, behavior: 'smooth' })
+  }
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
@@ -30,6 +39,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
+              onClick={(e) => handleNavClick(e, link.href)}
               className="text-sm font-medium text-ink/70 transition-colors hover:text-brand"
             >
               {link.label}
@@ -38,7 +48,11 @@ export default function Navbar() {
         </div>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <a href="#contact" className="btn-primary px-5 py-2.5 text-sm">
+          <a
+            href="#contact"
+            onClick={(e) => handleNavClick(e, '#contact')}
+            className="btn-primary px-5 py-2.5 text-sm"
+          >
             Get a Quote <ArrowRight size={16} />
           </a>
         </div>
@@ -65,13 +79,17 @@ export default function Navbar() {
                 <a
                   key={link.href}
                   href={link.href}
-                  onClick={() => setOpen(false)}
+                  onClick={(e) => handleNavClick(e, link.href)}
                   className="rounded-xl px-3 py-3 text-base font-medium text-ink/80 hover:bg-light-cream hover:text-brand"
                 >
                   {link.label}
                 </a>
               ))}
-              <a href="#contact" onClick={() => setOpen(false)} className="btn-primary mt-2">
+              <a
+                href="#contact"
+                onClick={(e) => handleNavClick(e, '#contact')}
+                className="btn-primary mt-2"
+              >
                 Get a Quote <ArrowRight size={16} />
               </a>
             </div>
