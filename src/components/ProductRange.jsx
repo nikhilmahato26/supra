@@ -39,7 +39,7 @@ export default function ProductRange() {
                     alt={p.code}
                     className="relative z-10 w-44 drop-shadow-[0_18px_28px_rgba(53,74,138,0.22)] transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-3"
                   />
-                  <span className="absolute right-4 top-4 rounded-full bg-brand px-3 py-1 font-display text-sm tracking-wide text-white">
+                  <span className="absolute right-4  top-2 rounded-full bg-brand px-3 py-1 font-display text-sm tracking-wide text-white">
                     {p.code}
                   </span>
                 </div>
@@ -51,7 +51,7 @@ export default function ProductRange() {
                   <h3 className="mt-2 font-display text-3xl text-brand-dark">{p.name}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-ink/65">{p.desc}</p>
 
-                  <div className="mt-5 flex flex-wrap gap-2">
+                  <div className="mt-5  flex flex-wrap gap-2">
                     {p.apps.map((a) => (
                       <span
                         key={a}
