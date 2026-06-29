@@ -12,9 +12,27 @@ export default function Contact() {
   } = useForm()
   const [sent, setSent] = useState(false)
 
+  const WHATSAPP_NUMBER = '919054592545'
+
   const onSubmit = (data) => {
-    // Wire to your backend / email service here.
-    console.log('Enquiry submitted:', data)
+    const text = [
+      `*New Enquiry — SUPRA ElectroWeld*`,
+      ``,
+      `*Name:* ${data.name}`,
+      data.company ? `*Company:* ${data.company}` : null,
+      `*Phone:* ${data.phone}`,
+      `*Email:* ${data.email}`,
+      `*Enquiry Type:* ${data.type}`,
+      ``,
+      `*Message:*`,
+      data.message,
+    ]
+      .filter(Boolean)
+      .join('\n')
+
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`
+    window.open(url, '_blank', 'noopener,noreferrer')
+
     setSent(true)
     reset()
     setTimeout(() => setSent(false), 4000)
