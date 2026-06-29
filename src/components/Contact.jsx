@@ -35,22 +35,22 @@ export default function Contact() {
           </p>
 
           <div className="mt-10 space-y-4">
-            <a href="tel:+910000000000" className="flex items-center gap-4 group">
+            <a href="tel:+919054592545" className="flex items-center gap-4 group">
               <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand/10 text-brand transition-colors group-hover:bg-brand group-hover:text-white">
                 <Phone size={20} />
               </span>
               <span>
                 <span className="block text-xs uppercase tracking-widest text-ink/45">Call us</span>
-                <span className="font-medium text-ink/85">+91 00000 00000</span>
+                <span className="font-medium text-ink/85">+91 90545 92545</span>
               </span>
             </a>
-            <a href="mailto:info@supraelectroweld.com" className="flex items-center gap-4 group">
+            <a href="mailto:sales@supraelectroweld.com" className="flex items-center gap-4 group">
               <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand/10 text-brand transition-colors group-hover:bg-brand group-hover:text-white">
                 <Mail size={20} />
               </span>
               <span>
                 <span className="block text-xs uppercase tracking-widest text-ink/45">Email</span>
-                <span className="font-medium text-ink/85">info@supraelectroweld.com</span>
+                <span className="font-medium text-ink/85">sales@supraelectroweld.com</span>
               </span>
             </a>
             <div className="flex items-center gap-4">
@@ -66,7 +66,7 @@ export default function Contact() {
 
           <div className="mt-10 flex flex-wrap gap-3">
             <a
-              href="https://wa.me/910000000000"
+              href="https://wa.me/919054592545"
               target="_blank"
               rel="noreferrer"
               className="btn-yellow"
