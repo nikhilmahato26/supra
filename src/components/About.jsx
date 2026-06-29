@@ -49,8 +49,8 @@ export default function About() {
         <div className="grid grid-cols-2 gap-5">
           {STATS.map((s, i) => (
             <Reveal key={s.label} delay={i * 0.08} variant="up">
-              <div className="rounded-3xl border border-brand/10 bg-white p-7 shadow-card">
-                <p className="font-display text-5xl text-brand">
+              <div className="rounded-3xl border border-brand/10 bg-white p-5 shadow-card sm:p-7">
+                <p className="font-display text-3xl text-brand break-words sm:text-4xl lg:text-5xl">
                   <Counter value={s.value} suffix={s.suffix} />
                 </p>
                 <p className="mt-2 text-sm font-medium text-ink/60">{s.label}</p>
