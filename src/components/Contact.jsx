@@ -77,7 +77,7 @@ export default function Contact() {
               </span>
               <span>
                 <span className="block text-xs uppercase tracking-widest text-ink/45">Manufactured by</span>
-                <span className="font-medium text-ink/85">SUPRA ElectroWeld India</span>
+                <span className="font-medium text-ink/85">SUPRA ElectroWeld India <br />Ahmedabad,(Guj.)India</span>
               </span>
             </div>
           </div>

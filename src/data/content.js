@@ -128,7 +128,6 @@ export const CERTIFICATIONS = [
 
 export const STATS = [
   { value: 9001, suffix: ':2015', label: 'ISO Certified' },
-  { value: 3, suffix: '+', label: 'Electrode Grades' },
-  { value: 125, suffix: '/box', label: 'Electrodes Packed' },
+ 
   { value: 100, suffix: '%', label: 'Batch Tested' },
 ]

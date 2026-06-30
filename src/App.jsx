@@ -35,7 +35,7 @@ export default function App() {
         <Certifications />
         {/* <Gallery /> */}
         <Contact />
-        <Wordmark />
+        {/* <Wordmark /> */}
       </main>
       <Footer />
     </motion.div>

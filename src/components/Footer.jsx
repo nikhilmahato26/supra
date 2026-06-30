@@ -1,9 +1,10 @@
 import { ArrowUp } from 'lucide-react'
+import { PRODUCTS } from '../data/content'
 
 const COLUMNS = [
   {
     title: 'Products',
-    links: ['E6013 General Purpose', 'E7018 Low-Hydrogen', 'E308L Stainless Steel', 'E6010 / E6011 Fast-Freeze'],
+    links: PRODUCTS.map((p) => p.code),
   },
   {
     title: 'Certifications',
@@ -31,7 +32,7 @@ export default function Footer() {
               className="h-12 w-auto brightness-0 invert"
             />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/60">
-              Premium mild steel welding electrodes manufactured by SUPRA ElectroWeld India.
+              Premium  welding electrodes manufactured by SUPRA ELECTOWELD INDIA.
               ISO 9001:2015 certified · MSME registered.
             </p>
             <div className="mt-6 space-y-1.5 text-sm text-white/70">
